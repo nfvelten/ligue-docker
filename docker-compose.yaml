@@ -1,0 +1,46 @@
+version: "3.8"
+
+services:
+  web:
+    build:
+      context: ./ligue-front
+      dockerfile: Dockerfile
+    ports:
+      - "3001:3001"
+    networks:
+      - docker
+  server:
+    build:
+      context: ./ligue-backend
+      target: development-build-stage
+      dockerfile: Dockerfile
+    container_name: server
+    ports:
+      - "3000:3000"
+    restart: "unless-stopped"
+    networks:
+      - docker
+    links:
+      - postgres
+    depends_on:
+      - postgres
+  postgres:
+    image: postgres:14.1-alpine
+    container_name: postgres
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    ports:
+      - "5432:5432"
+    expose:
+      - "5432"
+    networks:
+      - docker
+
+networks:
+  docker:
+    driver: bridge
+
+volumes:
+  data:
+    driver: local
