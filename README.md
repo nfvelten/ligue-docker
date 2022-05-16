@@ -35,7 +35,6 @@ $ yarn run prisma:migrate
 ```bash
 # [
     {
-    id: gerado automaticamente
     name: string,
     age: int,
     hobby: string,
