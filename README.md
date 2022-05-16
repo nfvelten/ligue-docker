@@ -5,7 +5,7 @@ Frontend feito com TypeScript, Vite, React, React Query, Axios e Docker
 
 Feito utilizando os melhores praticas de design de código como SOLID, Clean Arch e Hex Arch
 
-## Installation
+## Instalação
 ```bash
 $ cd ligue-front
 $ yarn install
@@ -16,7 +16,7 @@ $ yarn install
 ```bash
 $ docker-compose up
 ```
-## Migrate o banco de dado
+## Migre o banco de dados
 ```bash
 $ cd ligue-backend
 $ yarn run prisma:migrate
@@ -27,7 +27,7 @@ $ yarn run prisma:migrate
 # GET localhost:3000/developers - buscar desenvolvedores
 # POST localhost:3000/developers - criar desenvolvedor
 # GET localhost:3000/developers/:id - buscar desenvolvedor por id
-# GET localhost:3000/developers/filter? - filtrar desenvolvedores por via querystring exemplo: /filter?age=20 /filter?sex=M
+# GET localhost:3000/developers/filter? - filtrar desenvolvedores via querystring exemplo: /filter?age=20 /filter?sex=M
 # DELETE localhost:3000/developers/:id - excluir desenvolvedor por id
 # PUT localhost:3000/developers/:id - atulizar informações do desenvolvedor por id
 ```
