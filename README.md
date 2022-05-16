@@ -31,6 +31,24 @@ $ yarn run prisma:migrate
 # DELETE localhost:3000/developers/:id - excluir desenvolvedor por id
 # PUT localhost:3000/developers/:id - atulizar informações do desenvolvedor por id
 ```
+## Parametros para o POST
+```bash
+# [
+    {
+    id: gerado automaticamente
+    name: string,
+    age: int,
+    hobby: string,
+    sex: 'M' | 'F'
+    birthdate: '2016-09-18T00:00:00.000Z' obs: nesse campo a API só aceita datas validas da ISO 8601 como no exemplo
+  }
+]
+```
+## Exemplo de data
+```bash
+# '2020-05-16T07:021:00.000Z'
+# '2000-01-05T07:021:00.000Z'
+```
 ## Endpoints do Frontend
 ```bash
 # localhost:3001/
