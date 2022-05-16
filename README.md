@@ -59,6 +59,7 @@ $ yarn run prisma:migrate
 ## Prisma Studio
 ```bash
 # localhost:5000
+$ cd ligue-backend
 $ yarn prisma studio
 ```
 ## Test
