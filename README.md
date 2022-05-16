@@ -1,7 +1,9 @@
 # Teste Ligue
 Api feita com TypeScript, Express, Prisma, Postgres, Jest, Husky, Swagger e Docker
+
 Frontend feito com TypeScript, Vite, React, React Query, Axios e Docker
-Feito utilizando os melhores padrões de design de código como SOLID, Clean Arch e Hex Arch
+
+Feito utilizando os melhores praticas de design de código como SOLID, Clean Arch e Hex Arch
 
 ## Installation
 ```bash
