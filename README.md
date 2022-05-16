@@ -1,5 +1,5 @@
 # Teste Ligue
-Api feita com TypeScript, Express, Prisma, Postgres, Jest, Husky, Swagger e Docker
+Api feita com Node, TypeScript, Express, Prisma, Postgres, Jest, Husky, Swagger e Docker
 
 Frontend feito com TypeScript, Vite, React, React Query, Axios e Docker
 
